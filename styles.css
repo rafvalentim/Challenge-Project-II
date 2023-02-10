@@ -7,7 +7,7 @@ body {
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -21,6 +21,12 @@ h2 {
     font-weight: bold;
     text-align: center;
     color: #0a1d3d;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 li {
@@ -61,7 +67,7 @@ a:visited {
 /* Navigation Menu */
 
 .nav-menu {
-    font-size: 2.250rem;
+    font-size: 1.750rem;
     background-color: #0a1d3d;
     color: whitesmoke;
     display: flex;
@@ -80,20 +86,17 @@ a:visited {
 
 /* Menu screen size */
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 768px) {
     .nav-menu {
         display: flex;
-        font-size: 1.250rem;
+        font-size: 1.10rem;
         background-color: #0a1d3d;
-        height: 50%;
         color: whitesmoke;
-        align-items: center;
-        text-align: center;
-
     }
 
     .menu li {
-        padding: 15px 0.4rem;
+        padding: 0 0.2rem;
+        margin: 0;
     }
 }
 
@@ -118,13 +121,26 @@ a:visited {
 }
 
 .about-lufthansa h3 {
-    font-size: 2.150rem;
+    font-size: 2.350rem;
     font-weight: bold;
     text-align: center;
 }
 
 .about-lufthansa p {
     font-size: 1.250rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        height: 500px;
+        background-image: url(https://github.com/rafvalentim/Challenge-Project-II/blob/main/images/png-transparent-lufthansa-logo-lufthansa-cargo-flight-airline-logo-airline-miscellaneous-text-otto-firle.png?raw=true);
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        overflow: auto;
+    }
 }
 
 /* Fleet Section */
@@ -180,4 +196,155 @@ a:visited {
 
 .destination-title {
     background-color: #0a1d3d;
+    margin-top: 2%;
 }
+
+.destinations-row1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0;
+}
+
+.destinations-row2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0;
+}
+
+.destinations-images {
+    display: flex;
+    width: 49.65%;
+    gap: 10px;
+}
+
+.destinations-images img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    .destinations-row1 h2 {
+        display: none;
+    }
+
+    .destinations-row2 h2 {
+        display: none;
+    }
+
+    .destinations-images {
+        display: flex;
+        width: 100%;
+    }
+
+    .dest-map1 {
+        display: none;
+    }
+
+    .dest-map2 {
+        width: 100%;
+    }
+}
+
+/* Our Team Section */
+
+.team-title {
+    background-color: #0a1d3d;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    gap: 14%;
+}
+
+.team-container img {
+    width: 100%;
+    margin-bottom: 0.2rem;
+    bbborder: 1px solid #0a1d3d;
+}
+
+.team-cards {
+    width: 15%;
+    justify-content: center;
+    text-align: center;
+    color: #0a1d3d;
+    font-size: 1.150em;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.team-cards p {
+    margin: 0.3rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .team-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .team-cards {
+        width: 30%;
+        margin: 10px 0;
+    }
+
+    .team-cards img {
+        width: 100%;
+    }
+  }
+
+
+/* Partners Section */
+
+.partners {
+    display: flex;
+    padding-bottom: 1.5rem;
+}
+
+.partners-container {
+    background-color: rgb(233, 232, 232);
+}
+
+.partners-title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #0a1d3d;
+    font-weight: normal;
+    background-color: #0a1d3d;
+    color: whitesmoke;
+}
+
+.partners-card {
+    display: flex;
+    justify-content: center;
+}
+
+.partners img {
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    .partners {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 1.5rem;
+    }
+
+    .partners-title {
+        font-size: 1rem;
+    }
+
+    .partners-card {
+        display: flex;
+        justify-content: center;
+        width: 35%;
+    
+    }
+}
+
