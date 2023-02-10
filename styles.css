@@ -141,6 +141,10 @@ a:visited {
         align-items: center;
         overflow: auto;
     }
+
+    .about-lufthansa h3 {
+        font-size: 1.7rem;
+    }
 }
 
 /* Fleet Section */
